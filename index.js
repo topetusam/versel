@@ -51,9 +51,9 @@ app.delete("/api/usuarios/:id", (req, res) => {
   } else res.status(404).json({ mensaje: "Usuario no encontrado" });
 });
 
-// Puerto de escucha (necesario para Vercel)
-app.listen(3000, () => {
-  console.log("Servidor en ejecución en el puerto 3000");
-});
+// // Puerto de escucha (necesario para Vercel)
+// app.listen(3000, () => {
+//   console.log("Servidor en ejecución en el puerto 3000");
+// });
 
 module.exports = app;
